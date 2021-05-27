@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+</head>
+<body>
+    <div>
+        <h1>BIENVENIDOS AL HOTEL PATATAVILLA</h1>
+    </div>
+    <div>
+        <h2>Si no eres cliente regístrate</h2>
+        <input type="text" placeholder="Nombre" id="nombre" />
+        <input type="text" placeholder="Apellido" id="apellido" />
+        <input type="text" placeholder="DNI" id="dni" />
+        <button onclick="anyadir()">Añadir</button>
+    </div>
+    <div>
+        <h2>Edita tu usuario</h2>
+        <input type="text" placeholder="Nombre" id="editnombre" />
+        <input type="text" placeholder="Apellido" id="editapellido" />
+        <button onclick="modificar()">Editar</button>
+    </div>
+    <div>
+        <h2>Haz tu reserva</h2>
+        <input type="text" placeholder="DNI" id="dni2" />
+        <button onclick="buscar()">Identifícate</button>
+        <p>Elige tu habitación</p>
+        <input type="text" placeholder="Pon un número del 1 al 10" id="room" />
+        <button onclick="anyadirReserva()">Reservar</button>
+        <p>Introduce la fecha de entrada</p>
+        <input type="date" id="fechain"/>
+        <p>Introduce la fecha de salida</p>
+        <input type="date" id="fechaout"/>
+    </div>
+    <div id="feedback"></div>
+ <script src="index.js"></script>  
+</body>
+</html>
